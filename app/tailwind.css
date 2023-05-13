@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.mainWindow {
+  @apply relative min-h-screen bg-gray-900 sm:flex sm:justify-center;
+}
+
+h1 {
+  @apply mb-6 text-center text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl;
+}
+
+h2 {
+  @apply mb-6 text-center text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl;
+}
+td {
+  @apply whitespace-nowrap px-8 py-4 text-sm text-gray-500;
+}
+.link {
+  @apply text-blue-300 hover:text-blue-400;
+}
+.recorder {
+  @apply mt-6 flex h-56 min-h-fit flex-col items-center;
+}
+.btn-flex {
+  @apply flex items-center justify-center rounded 
+  border border-white bg-transparent px-4 py-2 
+  font-semibold text-white hover:border-transparent hover:bg-blue-300 hover:text-white;
+}
+
+.audio-controls,
+.video-controls {
+  @apply flex flex-col items-center justify-center;
+}
+
+.audio-player,
+.video-player,
+.recorded-player {
+  @apply mb-5 mt-5 flex flex-col items-center justify-center;
+}
